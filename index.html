@@ -1,0 +1,23 @@
+<!-- Adding Two numbers when clicking on the ADD button -->
+
+<!doctype html>
+<html>
+    <head>
+        <script>
+        function add(){
+            var a,b,c;
+            a=Number(document.getElementById("first").value);
+            b=Number(document.getElementById("second").value);
+            c= a + b;
+            document.getElementById("answer").value= c;
+        }
+        </script>
+
+    </head>
+    <body>
+        <h1>Enter the First number : <input id="first" type="number" ></h1><br><br>
+        <h1>Enter the Second number: <input id="second" type="number" ></h1><br><br>
+        <button onclick="add()"><h3>Add</h3></button><br><br>
+        <h1>Sum : <input id="answer"></h1>
+    </body>
+</html>
